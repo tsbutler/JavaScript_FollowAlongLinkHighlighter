@@ -34,6 +34,7 @@
     function highlightLink() {
       const linkCoords = this.getBoundingClientRect();
       console.log(linkCoords);
+      highlight.style.width = `${linkCoords.width}px`;
     }
 
     triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
